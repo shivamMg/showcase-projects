@@ -1,0 +1,38 @@
+* {
+  font-family: 'Raleway';
+}
+
+body {
+  /*
+   * 'Concrete Seamless' by Anchor
+   * https://www.anchour.com/
+   * Downloaded from http://subtlepatterns.com/ 
+   * Under https://creativecommons.org/licenses/by-sa/3.0/
+   */
+  background: url('../images/concrete_seamless.png');
+}
+
+.card-header {
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-body {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.card-tags {
+  margin-bottom: 15px;
+}
+
+.card-tags > .chip {
+  color: #ffffff;
+  background: #212121;
+  font-size: 11px;
+}
+
+.card-footer {
+  font-size: 13px;
+}
