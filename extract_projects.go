@@ -24,6 +24,13 @@ func getProjects() []Project {
 		return []Project{}
 	}
 
+	// Reverse `projects` to display newest first
+	l := len(projects)
+	for i := 0; i < l/2; i++ {
+		j := l - i - 1
+		projects[i], projects[j] = projects[j], projects[i]
+	}
+
 	return projects
 }
 
