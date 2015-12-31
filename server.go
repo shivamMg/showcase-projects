@@ -5,12 +5,21 @@ import (
 	"text/template"
 )
 
-var t = template.Must(template.ParseGlob("templates/*"))
+var tmplts = template.Must(template.ParseGlob("templates/*"))
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	projects := getProjects()
+func indexPageHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	err := t.ExecuteTemplate(w, "index", projects)
+	projects := getProjects()
+	err := tmplts.ExecuteTemplate(w, "index", projects)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+}
+
+func aboutPageHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	err := tmplts.ExecuteTemplate(w, "about", nil)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
@@ -18,7 +27,9 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", handler)
-	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
+	http.HandleFunc("/", indexPageHandler)
+	http.HandleFunc("/about/", aboutPageHandler)
+	fs := http.FileServer(http.Dir("assets"))
+	http.Handle("/assets/", http.StripPrefix("/assets/", fs))
 	http.ListenAndServe(":8080", nil)
 }

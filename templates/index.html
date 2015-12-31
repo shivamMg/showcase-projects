@@ -1,57 +1,42 @@
 {{define "index"}}
-<!DOCTYPE html>
-  <html>
-    {{template "head"}}
+{{template "head"}}
 
-    <body>
-      <div>
-        <div class="row">
-          <div class="col s12">
-            <h4 class="blue-grey-text text-darken-4">Showcase Projects</h4>
-          </div>
-        </div>
-
-        <div class="row">
-        {{range .}}
-          <!-- card -->
-          <div class="col s12 m6 l3">
-            <div class="card-panel">
-              <div class="card-header">
-                {{.Name}}
-                <div class="right">
-                {{if .WebsiteLink}}
-                  <a href="{{.WebsiteLink}}" title="Website">
-                    <img src="assets/images/web.svg" alt="Website">
-                  </a>
-                {{end}}
-                {{if .GithubLink}}
-                  <a href="{{.GithubLink}}" title="GitHub">
-                    <img src="assets/images/github.svg" alt="GitHub">
-                  </a>
-                {{end}}
-                </div>
-              </div>
-              <div class="card-body">
-                {{.Description}}
-              </div>
-              <div class="card-tags">
-              {{range .Tags}}
-                <div class="chip">{{.}}</div>
-              {{end}}
-              </div>
-              <div class="card-footer">
-                by <a href="{{.CreatorLink}}">{{.Creator}}</a>
-              </div>
-            </div>
-          </div>
-          <!-- /card -->
+<div class="row">
+{{range .}}
+  <!-- card -->
+  <div class="col s12 m6 l3">
+    <div class="card-panel">
+      <div class="card-header">
+        {{.Name}}
+        <div class="right">
+        {{if .WebsiteLink}}
+          <a href="{{.WebsiteLink}}" title="Website">
+            <img src="assets/images/web.svg" alt="Website">
+          </a>
+        {{end}}
+        {{if .GithubLink}}
+          <a href="{{.GithubLink}}" title="GitHub">
+            <img src="assets/images/github.svg" alt="GitHub">
+          </a>
         {{end}}
         </div>
       </div>
+      <div class="card-body">
+        {{.Description}}
+      </div>
+      <div class="card-tags">
+      {{range .Tags}}
+        <div class="chip">{{.}}</div>
+      {{end}}
+      </div>
+      <div class="card-footer">
+        by <a href="{{.CreatorLink}}">{{.Creator}}</a>
+      </div>
+    </div>
+  </div>
+  <!-- /card -->
+{{end}}
+</div>
 
-      <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-      <script type="text/javascript" src="assets/js/script.js"></script>
-    </body>
-  </html>
+{{template "foot"}}
 {{end}}
