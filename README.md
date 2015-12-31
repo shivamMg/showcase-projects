@@ -6,7 +6,8 @@ Share your projects with friends
 ### How to add project
 
 1. Fork this repo
-2. Update `projects.yaml` file with the following details in YAML format:
+2. Update `projects.yaml` file with the following details in YAML format.
+   **Note:** Only **website-link** is optional, rest are mandatory.
    - **project**: Project name.
    - **description**: One line description of your project, possibly in less than 80 chars.
    - **website-link**: Link to the application. If it is a website then link to the site, or if it is an android app, link to Play Store. You can leave it blank if none apply.
@@ -15,7 +16,6 @@ Share your projects with friends
     e.g. For this project: `[go, materializecss, html]`
    - **creator**: Creator name
    - **creator-link**: Link to the creator. You can link to your website, blog, Twitter page or even your GitHub account.
-> **Note:** Only **website-link** is optional, rest are mandatory.
 
 3. After you have made the changes, commit your work:
    ```

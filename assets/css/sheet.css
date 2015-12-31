@@ -37,6 +37,7 @@ body {
   padding-right: 5px;
   border-radius: 4px;
   margin-bottom: 2px;
+  cursor: pointer;
 }
 
 .card-footer {
