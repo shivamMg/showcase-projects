@@ -12,6 +12,10 @@ body {
   background: url('../images/concrete_seamless.png');
 }
 
+a.links:hover {
+  color: #455a64;
+}
+
 .card-header {
   font-size: 20px;
   margin-bottom: 15px;

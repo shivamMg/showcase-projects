@@ -7,16 +7,11 @@
   <div class="col s12 m6 l3">
     <div class="card-panel">
       <div class="card-header">
-        {{.Name}}
+        <a href="{{.GithubLink}}" title="View Project" class="links">{{.Name}}</a>
         <div class="right">
         {{if .WebsiteLink}}
           <a href="{{.WebsiteLink}}" title="Website">
             <img src="assets/images/web.svg" alt="Website">
-          </a>
-        {{end}}
-        {{if .GithubLink}}
-          <a href="{{.GithubLink}}" title="GitHub">
-            <img src="assets/images/github.svg" alt="GitHub">
           </a>
         {{end}}
         </div>
@@ -26,11 +21,11 @@
       </div>
       <div class="card-tags">
       {{range .Tags}}
-        <div class="chip">{{.}}</div>
+        <div class="chip" title="Select all {{.}} tags">{{.}}</div>
       {{end}}
       </div>
       <div class="card-footer">
-        by <a href="{{.CreatorLink}}">{{.Creator}}</a>
+        by <a href="{{.CreatorLink}}" class="links">{{.Creator}}</a>
       </div>
     </div>
   </div>
