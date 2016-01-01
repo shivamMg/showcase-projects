@@ -1,0 +1,15 @@
+- project: showcase-projects
+  description: This project itself
+  website-link:
+  github-link: https://github.com/shivamMg/showcase-projects
+  tags: [go, materializecss, html]
+  creator: Shivam Mamgain
+  creator-link: https://github.com/shivamMg
+- project: spotify-dl
+  description: Download songs from your Spotify 'My Music' collection
+  website-link:
+  github-link: https://github.com/SathyaBhat/spotify-dl
+  tags: [python]
+  creator: Sathya Bhatt
+  creator-link: https://twitter.com/sathyabhat
+
