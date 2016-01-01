@@ -23,6 +23,7 @@ Projects Display Gallery
    ```
    git push origin master
    ```
+6. Submit a Pull Request.
 
 
 #### Update Projects file <a name="instructions"></a>
