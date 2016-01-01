@@ -1,28 +1,31 @@
 ## Showcase Projects
 
-Display your projects in a gallery
+Projects Display Gallery
 
 
 ### How to add project
 
 1. Fork this repo
 2. Clone your fork with:
+
    ```
    git clone git@github.com:<your-username>/showcase-projects.git
    ```
 3. Update `projects.yaml` file and include your project details. Instructions [below](#instructions).
 4. Commit your work with:
+
    ```
    git commit -m "Add project: <project-name>"
    ```
    If you have more than one project, then commit them separately.
 5. Push your changes with:
+
    ```
    git push origin master
    ```
 
 
-### Update `projects.yaml` <a name="instructions"></a>
+#### Update Projects file <a name="instructions"></a>
 
 You must enter the following details in YAML format:
 
@@ -40,4 +43,7 @@ You must enter the following details in YAML format:
 
 ### License
 
-See the `LICENCE` file.
+This project has been licensed under GNU General Public License v3.
+
+`concrete_seamless.png` inside the `assets/images/` directory, is made by [Anchour](https://www.anchour.com), and has been downloaded from [subtlepatterns.com](http://subtlepatterns.com/). It is licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+
