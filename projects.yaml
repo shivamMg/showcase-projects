@@ -12,4 +12,11 @@
   tags: [python]
   creator: Sathya Bhatt
   creator-link: https://twitter.com/sathyabhat
+- project: Net-Neutrality-Badge
+  description: Add SaveTheInternet Badge to your Facebook DP to show support for Net Neutrality
+  website-link: https://net-neutrality-badge.herokuapp.com/
+  github-link: https://github.com/mr-karan/NetNeutralityBadge
+  tags: [python, graph api, html, css, flask]
+  creator: Karan Sharma
+  creator-link: https://github.com/mr-karan/
 
