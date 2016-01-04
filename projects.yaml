@@ -19,4 +19,11 @@
   tags: [python, graph api, html, css, flask]
   creator: Karan Sharma
   creator-link: https://github.com/mr-karan/
+- project: Back2Work
+  description: Chrome extension to remind you to get Back to Work on certain webpages. Available on the Chrome Store.
+  website-link: https://chrome.google.com/webstore/detail/back-to-work/njaifcgiknihkjofpbjhfpmhjicblgoo
+  github-link: https://github.com/rhnvrm/back2work
+  tags: [js, chrome extension, html, css]
+  creator: Rohan Verma
+  creator-link: https://github.com/rhnvrm/
 
