@@ -10,6 +10,13 @@ body {
    * Under https://creativecommons.org/licenses/by-sa/3.0/
    */
   background: url('../images/concrete_seamless.png');
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 a.links:hover {

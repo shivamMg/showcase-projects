@@ -27,9 +27,16 @@ func aboutPageHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	// For Openshift Deployment
+	// bind := fmt.Sprintf("%s:%s", os.Getenv("OPENSHIFT_GO_IP"), os.Getenv("OPENSHIFT_GO_PORT"))
+
+	// For local testing
+	bind := ":8080"
+
 	http.HandleFunc("/", indexPageHandler)
 	http.HandleFunc("/about/", aboutPageHandler)
 	fs := http.FileServer(http.Dir("assets"))
 	http.Handle("/assets/", http.StripPrefix("/assets/", fs))
-	http.ListenAndServe(":8080", nil)
+
+	http.ListenAndServe(bind, nil)
 }
