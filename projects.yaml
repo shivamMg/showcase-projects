@@ -26,4 +26,11 @@
   tags: [js, chrome extension, html, css]
   creator: Rohan Verma
   creator-link: https://github.com/rhnvrm/
+- project: hackercouch
+  description: Hospitality for Hackers. To pledge your couch, file a Pull Request.
+  website-link: https://hackercouch.com/
+  github-link: https://github.com/hackercouch/hackercouch
+  tags: [jekyll, html, css, ruby, shell]
+  creator: Nemo
+  creator-link: https://github.com/captn3m0/
 
