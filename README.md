@@ -39,7 +39,16 @@ You must enter the following details in YAML format:
 - **creator**: Creator name.
 - **creator-link**: Link to the creator. You can link to your website, blog, Twitter page or even your GitHub profile.
 
-**Note**: **website-link** is optional.
+**Note**: Only **website-link** is optional.
+
+
+### Deploy on Openshift
+
+Uncomment the following line in `server.go`:
+
+```go
+bind := fmt.Sprintf("%s:%s", os.Getenv("OPENSHIFT_GO_IP"), os.Getenv("OPENSHIFT_GO_PORT"))
+```
 
 
 ### License

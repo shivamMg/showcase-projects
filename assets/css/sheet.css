@@ -54,3 +54,7 @@ a.links:hover {
 .card-footer {
   font-size: 13px;
 }
+
+footer.page-footer .footer-copyright {
+  background-color: #100a09;
+}
