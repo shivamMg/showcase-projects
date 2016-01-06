@@ -33,4 +33,11 @@
   tags: [jekyll, html, css, ruby, shell]
   creator: Nemo
   creator-link: https://github.com/captn3m0/
+- project: favouritetokindle
+  description: An app that sends links from tweets you favourite to your kindle
+  website-link:
+  github-link: https://github.com/hariprasadkulkarni/favouritetokindle
+  tags: [python]
+  creator: Hariprasad Kulkarni
+  creator-link: https://github.com/hariprasadkulkarni/
 
