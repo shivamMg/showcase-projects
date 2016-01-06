@@ -35,7 +35,7 @@ You must enter the following details in YAML format:
 - **website-link**: Link to the application. If it is a website then link to the site, or if it is an android app, link to Play Store.
 - **github-link**: Link to the GitHub source repo.
 - **tags**: A list of tags of the technologies used. Keep each tag in lowercase.
-  e.g. `[python, html, css, javascript]`
+  e.g. `[python, html, css, js]`
 - **creator**: Creator name.
 - **creator-link**: Link to the creator. You can link to your website, blog, Twitter page or even your GitHub profile.
 
@@ -44,7 +44,9 @@ You must enter the following details in YAML format:
 
 ### Deploy on Openshift
 
-Uncomment the following line in `server.go`:
+You are going to need the [OpenShift Go Cartridge](https://github.com/smarterclayton/openshift-go-cart). All necessary instructions are provided in its README.
+
+OpenShift allocates an IP and Port for you application.  Uncomment the following line in `server.go` to listen to that IP and Port, and remove other declaration of `bind` variable.
 
 ```go
 bind := fmt.Sprintf("%s:%s", os.Getenv("OPENSHIFT_GO_IP"), os.Getenv("OPENSHIFT_GO_PORT"))
