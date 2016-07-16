@@ -40,4 +40,10 @@
   tags: [python]
   creator: Hariprasad Kulkarni
   creator-link: https://github.com/hariprasadkulkarni/
-
+- project: scramblejs
+  description: text animation library cum jQuery plugin
+  website-link: 
+  github-link: https://github.com/turtleDev/scramblejs
+  tags: [js, jquery]
+  creator: Saravjeet 'Aman' Singh
+  creator-link: https://github.com/turtleDev
